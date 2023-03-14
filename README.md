@@ -1,2 +1,3 @@
 # argentina-programa
-Tareas de la clase 5 de r/argentina-programa.
+Tareas de de r/argentina-programa.
+Curso de Javascript de Fabricio Sodano.
