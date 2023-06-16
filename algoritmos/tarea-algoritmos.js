@@ -70,3 +70,10 @@ function sumarNumerosImpares1Al30(){
     }
     console.log(suma);
 }
+
+// Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
+function celsiusAFahrenheit(){
+    let celsius = Number(prompt("Ingresá los grados celsius\nsolo números"));
+    let fahrenheit = (1.8*celsius) + 32;
+    console.log(`${celsius} grados celsius son ${fahrenheit} grados fahrenheit`)
+}
