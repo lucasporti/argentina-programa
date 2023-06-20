@@ -96,3 +96,18 @@ function sumaDeNumerosArray(arr){
     }
     console.log(suma);
 }
+
+// Desafío de programación #11: Calcula el promedio de todos los números en un array de números. (en una función)
+function promedioArray(arr){
+    suma = 0;
+    contador= 0;
+    for(let i=0;i<arr.length;i++){
+        if(isNaN(Number(arr[i]))){
+        }else{
+            suma += Number(arr[i]);
+            contador++;
+        }
+    }
+    let promedio=suma/contador;
+    console.log(promedio);
+}
