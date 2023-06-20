@@ -77,3 +77,10 @@ function celsiusAFahrenheit(){
     let fahrenheit = (1.8*celsius) + 32;
     console.log(`${celsius} grados celsius son ${fahrenheit} grados fahrenheit`)
 }
+
+//Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
+function fahrenheitACelsius(){
+    let fahrenheit = Number(prompt("Ingresá los grados fahrenheit\nsolo números"));
+    let celsius = ((fahrenheit-32)*5)/9;
+    console.log(`${fahrenheit} grados fahrenheit son ${celsius} grados celsius`);
+}
