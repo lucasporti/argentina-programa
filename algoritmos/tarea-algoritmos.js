@@ -84,3 +84,15 @@ function fahrenheitACelsius(){
     let celsius = ((fahrenheit-32)*5)/9;
     console.log(`${fahrenheit} grados fahrenheit son ${celsius} grados celsius`);
 }
+
+// Desafío de programación #10: Calcula la suma de todos los números en un array de números
+function sumaDeNumerosArray(arr){
+    suma = 0;
+    for(let i = 0; i<arr.length;i++){
+        if(isNaN(arr[i])){
+        }else{
+            suma += arr[i];
+        }
+    }
+    console.log(suma);
+}
