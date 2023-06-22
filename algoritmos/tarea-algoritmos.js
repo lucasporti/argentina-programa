@@ -98,7 +98,7 @@ function sumaDeNumerosArray(arr){
 }
 
 // Desafío de programación #11: Calcula el promedio de todos los números en un array de números. (en una función)
-function promedioArray(arr){
+function crearPromedioArray(arr){
     suma = 0;
     contador= 0;
     for(let i=0;i<arr.length;i++){
@@ -110,4 +110,17 @@ function promedioArray(arr){
     }
     let promedio=suma/contador;
     console.log(promedio);
+}
+
+//Desafío de programación #12: Crea una función que reciba un array de números y devuelva un array conteniendo solo los números positivos
+
+function crearArrayPositivos(arr){
+    const ARRAY_POSITIVOS = [];
+    for(let i = 0; i<arr.length;i++){
+        if(isNaN(arr[i])){
+        } else if(arr[i]>0){
+            ARRAY_POSITIVOS.push(arr[i]);
+        }
+    }
+    console.log(ARRAY_POSITIVOS)
 }
