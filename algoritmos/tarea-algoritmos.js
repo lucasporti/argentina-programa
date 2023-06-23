@@ -124,3 +124,15 @@ function crearArrayPositivos(arr){
     }
     console.log(ARRAY_POSITIVOS)
 }
+
+//Desafío de programación #13: Find the maximum number in an array of numbers
+
+function findMaximumNumber(arr){
+    let maximumNumber = 0;
+    for(let i=0;i<arr.length;i++){
+        if(maximumNumber < arr[i]){
+            maximumNumber = arr[i]
+        }
+    }
+    console.log(maximumNumber)
+}
