@@ -68,7 +68,7 @@ function crearResultado(arr,sum,cont){
     <li>El promedio de edad es ${sum/cont} años</li>`
 }
 // Función que devuelve el número(edad) más grande iterando sobre un array
-function mayorEdad(arr){
+function obtenerMayorNumeroarr(){
     let mayor = 0;
     for(let i = 0; i<arr.length; i++){
         if(arr[i]>mayor) mayor = arr[i];
@@ -76,7 +76,7 @@ function mayorEdad(arr){
     return mayor;
 }
 // Función que devuelve el número más chico iterando sobre un array
-function menorEdad(arr){
+function obtenerMenorNumero(arr){
     let menor = 1000;
     for(let i = 0; i<arr.length; i++){
         if(arr[i]<menor) menor = arr[i];
