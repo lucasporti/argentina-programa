@@ -136,3 +136,14 @@ function findMaximumNumber(arr){
     }
     console.log(maximumNumber)
 }
+
+// Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci sin recursión
+
+function imprimirFibonacci(){
+    let fibonacci=[0,1];
+    for(let i=0;i<10;i++){
+        let f = Number(fibonacci[i]) + Number(fibonacci[i+1]);
+        fibonacci.push(f)
+    }
+    console.log(fibonacci)
+}
