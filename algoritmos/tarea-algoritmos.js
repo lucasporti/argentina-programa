@@ -147,3 +147,14 @@ function imprimirFibonacci(){
     }
     console.log(fibonacci)
 }
+
+//Desafío de programación #15: Crear una función que encuentre el número n de Fibonacci usando recursión
+
+function imprimirNFibonacci(numero){
+    let fibonacci=[0,1];
+    for(let i=0;i<Number(numero);i++){
+        let f = Number(fibonacci[i]) + Number(fibonacci[i+1]);
+        fibonacci.push(f);
+    }
+    console.log(fibonacci[Number(numero)-1]);
+}
