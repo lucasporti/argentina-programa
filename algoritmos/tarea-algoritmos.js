@@ -158,3 +158,22 @@ function imprimirNFibonacci(numero){
     }
     console.log(fibonacci[Number(numero)-1]);
 }
+
+// Desafío de programación #16: Crear una función que dado un número retorne un Boolean (true/false) dependiendo si es primo o no.
+
+function conseguirNumerosPrimos(numero){
+    let resultado;
+    if(Number(numero)<= 1){
+        resultado=false;
+    }else if(Number(numero)==2){
+        resultado = true;
+    }else{
+        resultado=true
+        for(let i=2;i<Number(numero);i++){
+            if(numero%i == 0){
+                resultado=false
+        }
+        }
+    }
+    return resultado;
+}
