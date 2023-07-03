@@ -177,3 +177,16 @@ function conseguirNumerosPrimos(numero){
     }
     return resultado;
 }
+
+//Desafío de programación #17: Calcular la suma de los dígitos positivos de un número entero positivo
+
+function calcularSumaNumeroEntero(numero){
+    let myArr = String(numero).split("").map((numero)=>{
+        return Number(numero)
+    })
+    let suma = 0;
+    for(let i = 0; i<myArr.length;i++){
+        suma += myArr[i];
+    }
+    console.log(suma);
+}
