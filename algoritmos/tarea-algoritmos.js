@@ -42,7 +42,7 @@ function crearTablaDel1Al9() {
 }
 
 // Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
-function sumaDeArray() {
+function sumarArray() {
     const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let suma = 0;
     for (let i = 0; i < numeros.length; i++) {
@@ -53,7 +53,7 @@ function sumaDeArray() {
 
 // Desafío de programación #6: Calcula 10! (10 factorial)
 
-function diezFactorial() {
+function crearDiezFactorial() {
     let diezFactorial = 10;
     for (let i = 9; i >= 1; i--) {
         diezFactorial *= i;
@@ -72,21 +72,21 @@ function sumarNumerosImpares1Al30() {
 }
 
 // Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
-function celsiusAFahrenheit() {
+function convertirCelsiusAFahrenheit() {
     let celsius = Number(prompt("Ingresá los grados celsius\nsolo números"));
     let fahrenheit = (1.8 * celsius) + 32;
     console.log(`${celsius} grados celsius son ${fahrenheit} grados fahrenheit`)
 }
 
 //Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
-function fahrenheitACelsius() {
+function convertirFahrenheitACelsius() {
     let fahrenheit = Number(prompt("Ingresá los grados fahrenheit\nsolo números"));
     let celsius = ((fahrenheit - 32) * 5) / 9;
     console.log(`${fahrenheit} grados fahrenheit son ${celsius} grados celsius`);
 }
 
 // Desafío de programación #10: Calcula la suma de todos los números en un array de números
-function sumaDeNumerosArray(arr) {
+function sumarNumerosArray(arr) {
     suma = 0;
     for (let i = 0; i < arr.length; i++) {
         if (isNaN(arr[i])) {
@@ -194,5 +194,9 @@ function calcularSumaNumeroEntero(numero) {
 // Desafío de programación #18: Imprimir los primeros 100 números primos
 
 function imprimir100NumerosPrimos() {
-
+    const numerosPrimos = [];
+    for(let i = 0; i<100;i++){;
+        if(conseguirNumerosPrimos(i)) numerosPrimos.push(i);
+    }
+    console.log(numerosPrimos);
 }
