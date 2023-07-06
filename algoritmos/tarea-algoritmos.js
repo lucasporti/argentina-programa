@@ -216,3 +216,14 @@ function imprimirNumerosPrimos(nPrimos, comienzaEn) {
         
         return numerosPrimos;
 }
+
+// Desafío de programación #20: Rotar un array hacia la izquierda una posición
+// Ejemplo:
+// [9, 1, 2, 3, 4] debería quedar como[1, 2, 3, 4, 9]
+// [5] debería quedar como[5]
+// [4, 3, 2, 1] debería quedar como[3, 2, 1, 4]
+
+function rotarArrayIzquierda(arr){
+    arr.push(arr.shift());
+    console.log(arr);
+}
