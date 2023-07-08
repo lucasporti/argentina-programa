@@ -227,3 +227,10 @@ function rotarArrayIzquierda(arr){
     arr.push(arr.shift());
     console.log(arr);
 }
+
+// Desafío de programación #21: Rotar un array a la derecha una posición
+
+function rotarArrayDerecha(arr){
+    arr.unshift(arr.pop());
+    console.log(arr);
+}
