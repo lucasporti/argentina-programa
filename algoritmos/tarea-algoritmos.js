@@ -234,3 +234,10 @@ function rotarArrayDerecha(arr){
     arr.unshift(arr.pop());
     console.log(arr);
 }
+
+// Desafío de programación #22: Invertir un array
+
+function invertirArray(arr){
+    const reversed = arr.reverse();
+    console.log(reversed);
+}
