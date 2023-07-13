@@ -239,5 +239,18 @@ function rotarArrayDerecha(arr){
 
 function invertirArray(arr){
     const reversed = arr.reverse();
-    console.log(reversed);
+    return reversed;
+}
+
+// Desafío de programación #23: Invertir una cadena de caracteres
+
+function invertirString(str){
+    let text = "";
+    let myArr = str.split("");
+    let arrayInvertido = invertirArray(myArr);
+
+    for (let i = 0; i < arrayInvertido.length; i++) {
+        text += arrayInvertido[i];
+    }
+    console.log(text);
 }
