@@ -254,3 +254,12 @@ function invertirString(str){
     }
     console.log(text);
 }
+
+// Desafío de programación #24: Crear una función que reciba dos dos arrays(arreglos) como argumentos y returne el resultado en un nuevo arreglo
+
+function convertirDosArrayEnUno(arr1, arr2){
+    const nuevoArray = [];
+    for(let i = 0; i < arr1.length; i++) nuevoArray.push(arr1[i]);
+    for(let u = 0; u < arr2.length; u++) nuevoArray.push(arr2[u]);
+    return(nuevoArray);
+}
