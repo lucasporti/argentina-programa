@@ -263,3 +263,16 @@ function convertirDosArrayEnUno(arr1, arr2){
     for(let u = 0; u < arr2.length; u++) nuevoArray.push(arr2[u]);
     return(nuevoArray);
 }
+
+// Desafío de programación #26: Crear una función que reciba dos arrays de números 
+// y retorne un nuevo array con los elementos que se encuentren en el primer array, pero no en el segundo
+
+function crearRestaEntreConjuntos(arr1,arr2){
+    let nuevoArr = [];
+    
+    for(let e of arr1){
+        if(!arr2.includes(e))
+            nuevoArr.push(e);
+    }
+    return nuevoArr;
+}
