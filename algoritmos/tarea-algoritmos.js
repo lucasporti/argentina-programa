@@ -301,3 +301,15 @@ function estaEnElArray(n, arr) {
 
     return false;
 }
+
+// Desafío de programación #28: Calculate the sum of first 100 prime numbers
+
+function sumOf100primes(){
+    const numerosPrimos = [];
+    for (let i = 0; i < 100; i++) if (conseguirNumerosPrimos(i)) numerosPrimos.push(i);
+    let suma = 0;
+    for(e of numerosPrimos){
+        suma += e;
+    }
+    console.log(suma);
+}
